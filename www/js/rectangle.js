@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     naja.initialize();
     }
-);
+);*/
 
 
 $('#change').click(function() {
@@ -10,9 +10,9 @@ $('#change').click(function() {
         status = 1;
     }
     console.log('Status: ' + status);
-    naja.makeRequest('POST', 'testingAjax!', {
+    /*naja.makeRequest('POST', 'testingAjax!', {
         status: 0
-    })
+    })*/
 });
 
 function switcher() {
