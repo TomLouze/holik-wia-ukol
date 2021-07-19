@@ -4,20 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Jan Holík - úkol WIA</title>
+	<title>{ifset $title}{$title|stripHtml} | {/ifset}úkol WIA</title>
 	<link rel="stylesheet" href="{$basePath}/css/style.css">
 	<script src="{$basePath}/js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
-	<!--
-	Je to přijatelné? Dejte mi, prosím, vědět...
-	Jan Holík, jh@boziweb.cz, 602 832 786
-	-->
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
 	{include content}
 
+        {* JS scripts after html document load *}
+        <script src="{$basePath}/js/main.js"></script>
 	{block scripts}{/block}
 </body>
 </html>
