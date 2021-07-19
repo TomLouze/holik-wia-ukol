@@ -1,0 +1,23 @@
+@import url(reset.css);
+
+.rectangle {
+    width: 200px;
+    height: 200px;
+    max-width: 95%;
+    background-color: red;
+    margin: calc(50vh - 100px) auto 20px auto;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.rectangle--active {
+    background-color: green;
+}
+
+.change {
+    width: 100%;
+    color: #ffffff;
+    background-color: blue;
+    font-size: 1.3rem;
+    padding: 10px;
+    text-align: center;
+}
